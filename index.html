@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学生管理系统</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <section class="title">
+        <img src="./img/账户管理.png" alt="">
+        <h1>学生管理系统</h1>
+      </section>
+      <section class="function">
+        <img src="./img/100分.png" alt="">
+        <span>学生成绩管理</span>
+      </section>
+      <section class="illustration">
+        <img src="./img/跳舞男孩.png" alt="">
+        <div>
+          <p>Welcome to the Student Administration System</p>
+        </div>
+      </section>
+    </nav>
+    <main>
+      <div class="main-wrapper">
+        <header>
+          <div class="search">
+            <img src="./img/搜索.png" alt="">
+            <input type="text" id="search-input">
+          </div>
+          <div class="shop-bar">
+            <span class="choose-class">软工2002班</span>
+            <section class="side-bar">
+              <div class="mod-student">
+                <img src="./img/xiugai.png" alt="">
+                点击此处确认修改
+              </div>
+              <div class="add-student">
+                <img src="./img/添加.png" alt="">
+                添加
+              </div>
+              <div class="del-student">
+                <img src="./img/删除.png" alt="">
+                删除
+              </div>
+            </section>
+          </div>
+        </header>
+        <div class="content">
+          <ul class="content-header">
+            <li>学号</li>
+            <li>姓名</li>
+            <li>高等数学</li>
+            <li>大学英语</li>
+            <li>算法设计与分析</li>
+            <li>操作系统</li>
+            <li>平均分</li>
+            <li>排名</li>
+          </ul>
+          <div class="content-item-container">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="mask">
+    <div class="add-box">
+      <div class="add-wrapper">
+        <label for="input-name">
+          <span>姓名</span>
+          <input type="text" id="input-name">
+        </label>
+        <label for="input-id">
+          <span>学号</span>
+          <input type="text" id="input-id">
+        </label>
+        <label for="input-math">
+          <span>高等数学</span>
+          <input type="text" id="input-math">
+        </label>
+        <label for="input-english">
+          <span>大学英语</span>
+          <input type="text" id="input-english">
+        </label>
+        <label for="input-algorithm">
+          <span>算法分析与设计</span>
+          <input type="text" id="input-algorithm">
+        </label>
+        <label for="input-operation">
+          <span>操作系统</span>
+          <input type="text" id="input-operation">
+        </label>
+        <div>
+          <button id="save-input">保存</button>
+          <button id="exit-input">退出</button>
+        </div>
+      </div>
+    </div>
+    <div class="success-toast">
+      <img src="./img/成功toast.png" alt="">
+      <p>操作成功</p>
+    </div>
+  </div>
+  <script src="./utils.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
